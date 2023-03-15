@@ -6,12 +6,6 @@ window.addEventListener("load", e => {
             .join("") + "</div>";
     document.getElementById("bsx").innerHTML = s;
 });
-function f(e) {
-    x=e.target.getAttribute("src");
-    v=x.split(".")[0].substring(5);
-    document.getElementById("b1").innerHTML = `<a href="game/"><img src="${x}"></a><br>`+nevek[v];
-}
-
 xm = window.innerWidth;
 ym = window.innerHeight;
 tx = xm / 2 - 50;
@@ -20,6 +14,7 @@ xv = 0;
 yv = 0;
 speed = 20;
 function start(x) {
+    document.getElementById("body").addEventListener("keydown", f);
     document.getElementById("bsx").style.display = "none";
     document.getElementById("o1").style.display = "inline-block";
     tank = document.getElementById("tank");
@@ -47,7 +42,7 @@ function start(x) {
                     x2.style.display = "none";
                 }, 50);
             }
-        })
+        });
     }, 10);
 }
 function coll(el1, el2) {
