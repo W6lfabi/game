@@ -69,11 +69,11 @@ function f(e) {
         case "ArrowUp":
             yv = -speed;
             xv = 0;
-            break
+            break;
         case "ArrowDown":
             yv = speed;
             xv = 0;
-            break
+            break;
         case " ":
             xv = 0;
             yv = 0;
