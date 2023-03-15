@@ -86,16 +86,16 @@ function f(e) {
                     top: ${ty}px;
                 }
                 100% {
-                    left: ${tx + 45 + Math.round(Math.random()*200-50)}px;
+                    left: ${tx + 45 + Math.round(Math.random()*200-100)}px;
                     top: -20px;
                 }
             }`);
             st.appendChild(tn);
             g = document.createElement("div");
             setTimeout((id) => {
-                document.getElementById(id).remove()
-                document.getElementById("g" + id).remove()
-            }, 1000, `g${ci}`)
+                document.getElementById(id).remove();
+                document.getElementById("g" + id).remove();
+            }, 1000, `g${ci}`);
             g.id = `g${ci}`;
             g.className = "golyo";
             g.style = `animation-name: g${ci};background-color: rgb(${
