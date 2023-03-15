@@ -1,4 +1,4 @@
-nevek = ["scientists","Star wars","Harry Potter","Lord of rings"];
+nevek = ["Scientists","Star Wars","Harry Potter","The Lord of the Rings"];
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
             .fill(0)
