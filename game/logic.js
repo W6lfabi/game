@@ -18,9 +18,10 @@ tx = xm / 2 - 50;
 ty = ym - 150;
 xv = 0;
 yv = 0;
-speed = 50;
+speed = 20;
 function start(x) {
     document.getElementById("bsx").style.display = "none";
+    document.getElementById("o1").style.display = "inline-block";
     tank = document.getElementById("tank");
     tank.innerHTML = `<img src="../pic/o${x}.pgj.png">`;
     tank.style.display = "inline-block";
@@ -34,7 +35,30 @@ function start(x) {
         if (ty + 160 > ym || ty < 0) yv = -yv;
         tank.style.top = `${ty}px`;
         tank.style.left = `${tx}px`;
-    }, 100);
+    }, 200);
+    l = setInterval(() => {
+        document.querySelectorAll(".golyo").forEach( v => {
+            x1 = v;
+            x2 = document.getElementById("o1");
+            if (coll(x1, x2)) {
+                clearInterval(l);
+                setTimeout(() => {
+                    x1.style.display = "none";
+                    x2.style.display = "none";
+                }, 50);
+            }
+        })
+    }, 10);
+}
+function coll(el1, el2) {
+    var rect1 = el1.getBoundingClientRect();
+    var rect2 = el2.getBoundingClientRect();
+    return !(
+      rect1.top > rect2.bottom ||
+      rect1.right < rect2.left ||
+      rect1.bottom < rect2.top ||
+      rect1.left > rect2.right
+    );
 }
 function f(e) {
     switch (e.key) {
@@ -57,6 +81,24 @@ function f(e) {
         case " ":
             xv = 0;
             yv = 0;
+            st = document.createElement('style');
+            st.type = "text/css"
+            tn = document.createTextNode(`@keyframes g1 {
+                0% {
+                    left: ${tx + 45}px;
+                    top: ${ty}px;
+                }
+                100% {
+                    left: ${tx + 45}px;
+                    top: -20px;
+                }
+            }`);
+            st.appendChild(tn);
+            g = document.createElement("div");
+            g.className = "golyo";
+            document.getElementById("body").appendChild(st);
+            document.getElementById("body").appendChild(g);
             break;
+
     }
 }
