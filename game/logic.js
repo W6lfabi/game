@@ -98,11 +98,12 @@ function f(e) {
             }, 1000, `g${ci}`);
             g.id = `g${ci}`;
             g.className = "golyo";
-            g.style = `animation-name: g${ci};background-color: rgb(${
+            g.style = `animation-name: g${ci};
+            background-color: rgb(${
                 Math.round(Math.random() * 200)
-            },${
+            }, ${
                 Math.round(Math.random() * 200)
-            },${
+            }, ${
                 Math.round(Math.random() * 200)
             });`;
             ci++;
