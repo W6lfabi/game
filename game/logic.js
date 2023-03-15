@@ -9,7 +9,7 @@ window.addEventListener("load", e => {
 function f(e) {
     x=e.target.getAttribute("src");
     v=x.split(".")[0].substring(5);
-    document.getElementById("b1").innerHTML = `<a href="game/"><img src="${x}"></a><br>`+nevek[v]
+    document.getElementById("b1").innerHTML = `<a href="game/"><img src="${x}"></a><br>`+nevek[v];
 }
 
 xm = window.innerWidth;
@@ -82,7 +82,7 @@ function f(e) {
             xv = 0;
             yv = 0;
             st = document.createElement('style');
-            st.type = "text/css"
+            st.type = "text/css";
             tn = document.createTextNode(`@keyframes g1 {
                 0% {
                     left: ${tx + 45}px;
