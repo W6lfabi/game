@@ -1,4 +1,4 @@
-nevek = ["scientists","Star wars","Harry Potter","Lord of rings"]
+nevek = ["scientists","Star wars","Harry Potter","Lord of rings"];
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
             .fill(0)
@@ -12,6 +12,7 @@ tx = xm / 2 - 50;
 ty = ym - 150;
 xv = 0;
 yv = 0;
+ci = 0;
 speed = 20;
 function start(x) {
     document.getElementById("body").addEventListener("keydown", f);
@@ -78,19 +79,33 @@ function f(e) {
             yv = 0;
             st = document.createElement('style');
             st.type = "text/css";
-            tn = document.createTextNode(`@keyframes g1 {
+            st.id = `gg${ci}`;
+            tn = document.createTextNode(`@keyframes g${ci} {
                 0% {
                     left: ${tx + 45}px;
                     top: ${ty}px;
                 }
                 100% {
-                    left: ${tx + 45}px;
+                    left: ${tx + 45 + Math.round(Math.random()*200-50)}px;
                     top: -20px;
                 }
             }`);
             st.appendChild(tn);
             g = document.createElement("div");
+            setTimeout((id) => {
+                document.getElementById(id).remove()
+                document.getElementById("g" + id).remove()
+            }, 1000, `g${ci}`)
+            g.id = `g${ci}`;
             g.className = "golyo";
+            g.style = `animation-name: g${ci};background-color: rgb(${
+                Math.round(Math.random() * 200)
+            },${
+                Math.round(Math.random() * 200)
+            },${
+                Math.round(Math.random() * 200)
+            });`
+            ci++;
             document.getElementById("body").appendChild(st);
             document.getElementById("body").appendChild(g);
             break;

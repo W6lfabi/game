@@ -60,6 +60,7 @@ button {
     transition: 0.2s;
     transition-timing-function: linear;
 }
+
 #o1 {
     display: none;
     width: 60px;
@@ -74,19 +75,20 @@ button {
     top: 2%;
     animation: a1 7s infinite;
 }
+
 @keyframes a1 {
     0% {
         left: 2%;
         top: 2%;
     }
+
     50% {
         left: 90%;
         top: 2%;
     }
+
     100% {
         left: 2%;
         top: 2%;
     }
 }
-    
-
