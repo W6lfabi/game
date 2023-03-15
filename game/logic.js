@@ -104,7 +104,7 @@ function f(e) {
                 Math.round(Math.random() * 200)
             },${
                 Math.round(Math.random() * 200)
-            });`
+            });`;
             ci++;
             document.getElementById("body").appendChild(st);
             document.getElementById("body").appendChild(g);
