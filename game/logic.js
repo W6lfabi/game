@@ -87,7 +87,7 @@ function f(e) {
                 }
                 100% {
                     left: ${tx + 45 + Math.round(Math.random()*200-100)}px;
-                    top: -20px;
+                    top: 0px;
                 }
             }`);
             st.appendChild(tn);
