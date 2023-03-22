@@ -2,24 +2,26 @@ nevek = ["Scientists","Star Wars","Harry Potter","The Lord of the Rings"];
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
             .fill(0)
-            .map((v, i) => `<div onclick="start(${i})"><img src="../pic/o${i}.pgj.png"><br>${nevek[i]}</div>`)
+            .map((v, i) => `<div onclick="start(${i})"><img class="x" src="../pic/o${i}.pgj.png"><br>${nevek[i]}</div>`)
             .join("") + "</div>";
     document.getElementById("bsx").innerHTML = s;
 });
 xm = window.innerWidth;
 ym = window.innerHeight;
-tx = xm / 2 - 50;
+tx = xm / 2 - 25;
 ty = ym - 150;
 xv = 0;
 yv = 0;
 ci = 0;
 speed = 20;
 function start(x) {
+    document.getElementById("o1").innerHTML = `<img class="ka" src="../pic/o${x}.pgj.png"></img>`
+    kar = window.location.search.split("=")[1];
     document.getElementById("body").addEventListener("keydown", f);
     document.getElementById("bsx").style.display = "none";
     document.getElementById("o1").style.display = "inline-block";
     tank = document.getElementById("tank");
-    tank.innerHTML = `<img src="../pic/o${x}.pgj.png">`;
+    tank.innerHTML = `<img class="tank" src="../pic/${kar}c.png">`;
     tank.style.display = "inline-block";
     tank.style.position = "fixed";
     tank.style.top = `${ty}px`;
@@ -82,11 +84,11 @@ function f(e) {
             st.id = `gg${ci}`;
             tn = document.createTextNode(`@keyframes g${ci} {
                 0% {
-                    left: ${tx + 45}px;
+                    left: ${tx + 20}px;
                     top: ${ty}px;
                 }
                 100% {
-                    left: ${tx + 45 + Math.round(Math.random()*200-100)}px;
+                    left: ${tx + 20 + Math.round(Math.random()*200-100)}px;
                     top: 0px;
                 }
             }`);

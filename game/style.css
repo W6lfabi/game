@@ -1,4 +1,4 @@
-img {
+img.x {
     width: 100px;
     height: 100px;
     background: fixed;
@@ -6,7 +6,10 @@ img {
     box-shadow: 1px 1px 3px black;
     border: solid 6px rgb(234, 203, 234);
 }
-
+img.tank {
+    width: 50px;
+    height: 90px;
+}
 div.c {
     width: 100%;
     display: flex;
@@ -25,7 +28,7 @@ div.c div {
     font-size: 11px;
 }
 
-img:hover {
+img.x:hover {
     border: solid 6px purple;
 }
 
@@ -52,23 +55,12 @@ button {
 }
 
 #tank {
-    display: none;
-    width: 100px;
-    height: 100px;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 5px;
-    background-color: blue;
     transition: 0.2s;
     transition-timing-function: linear;
 }
 
 #o1 {
     display: none;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    background-color: aquamarine;
-    box-shadow: 1px 1px 3px black;
     transition: 2s;
     animation-name: a1;
     position: absolute;
@@ -77,6 +69,15 @@ button {
     animation: a1 7s infinite;
 }
 
+.ka {
+    width: 60px;
+    height: 60px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
 @keyframes a1 {
     0% {
         left: 2%;
