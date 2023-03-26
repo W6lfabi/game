@@ -1,4 +1,5 @@
 nevek = ["Scientists","Star Wars","Harry Potter","The Lord of the Rings"];
+mappak = ["scientists","starwars","Potter","rings"];
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
             .fill(0)
@@ -15,7 +16,7 @@ yv = 0;
 ci = 0;
 speed = 20;
 function start(x) {
-    document.getElementById("o1").innerHTML = `<img class="ka" src="../pic/o${x}.pgj.png"></img>`
+    document.getElementById("o1").innerHTML = `<img class="ka" src="./${mappak[x]}/c1.jpg"></img>`
     kar = window.location.search.split("=")[1];
     document.getElementById("body").addEventListener("keydown", f);
     document.getElementById("bsx").style.display = "none";
