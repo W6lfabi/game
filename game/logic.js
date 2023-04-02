@@ -16,7 +16,7 @@ yv = 0;
 ci = 0;
 speed = 20;
 function start(x) {
-    document.getElementById("o1").innerHTML = `<img class="ka" src="./${mappak[x]}/c1.jpg"></img>`
+    document.getElementById("o1").innerHTML = `<img class="ka" src="./${mappak[x]}/c1.png"></img>`
     kar = window.location.search.split("=")[1];
     document.getElementById("body").addEventListener("keydown", f);
     document.getElementById("bsx").style.display = "none";

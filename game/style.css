@@ -7,8 +7,8 @@ img.x {
     border: solid 6px rgb(234, 203, 234);
 }
 img.tank {
-    width: 50px;
-    height: 90px;
+    width: 90px;
+    height: 150px;
 }
 div.c {
     width: 100%;
@@ -57,6 +57,7 @@ button {
 #tank {
     transition: 0.2s;
     transition-timing-function: linear;
+
 }
 
 #o1 {
@@ -70,13 +71,11 @@ button {
 }
 
 .ka {
-    width: 60px;
-    height: 60px;
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 210px;
+    width: 110px;
+    height: 210px;
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px black;
 }
 @keyframes a1 {
     0% {
