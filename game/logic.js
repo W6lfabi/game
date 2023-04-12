@@ -1,5 +1,11 @@
 nevek = ["Scientists","Star Wars","Harry Potter","The Lord of the Rings"];
 mappak = ["scientists","starwars","Potter","rings"];
+idlist = [
+    ["S1","S2","s3","s4","s5"].sort((a,b) => Math.random() - 0.5),
+    ["sw1","sw2"].sort((a,b) => Math.random() - 0.5),
+    ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
+    ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5)
+]
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
             .fill(0)
@@ -15,14 +21,18 @@ xv = 0;
 yv = 0;
 ci = 0;
 speed = 20;
+sz = 1;
+xx = 0
+hi = 0
 function start(x) {
-    document.getElementById("o1").innerHTML = `<img class="ka" src="./${mappak[x]}/c1.png"></img>`
+    xx = x
+    document.getElementById("o1").innerHTML = `<img id="szer" class="ka" src="./${mappak[x]}/c1.png"></img>`
     kar = window.location.search.split("=")[1];
     document.getElementById("body").addEventListener("keydown", f);
     document.getElementById("bsx").style.display = "none";
     document.getElementById("o1").style.display = "inline-block";
     tank = document.getElementById("tank");
-    tank.innerHTML = `<img class="tank" src="../pic/${kar}c.png">`;
+    tank.innerHTML = `<img id="tk" class="tank" src="../pic/${kar}c.png">`;
     tank.style.display = "inline-block";
     tank.style.position = "fixed";
     tank.style.top = `${ty}px`;
@@ -40,14 +50,33 @@ function start(x) {
             x1 = v;
             x2 = document.getElementById("o1");
             if (coll(x1, x2)) {
-                clearInterval(l);
-                setTimeout(() => {
-                    x1.style.display = "none";
-                    x2.style.display = "none";
-                }, 50);
+                fds = 0
+                if (sz < 5) {
+                    document.getElementById("szer").style.display = "none"
+                    setTimeout(() => {
+                        sz++ ;
+                        document.getElementById("szer").style.display = "inline-block"
+                        document.getElementById("szer").setAttribute("src", `./${mappak[x]}/c${sz}.png`)
+                    }, 1000)
+                } else {
+                    alert("Az utolsó szereplő is meghalt, You WIN!")
+                }
             }
         });
     }, 10);
+}
+function fd() {
+    if (fds) {
+        fds = 0
+        document.getElementById("szer").style="display: none;"
+        document.getElementById("idezet").style.display="inline-block"
+        document.getElementById("idezet").innerHTML=`${idlist[xx][hi]}`
+        setTimeout(()=>{
+            document.getElementById("idezet").style.display="none";
+            document.getElementById("szer").style="display: inline-block;";
+        },1000)
+        hi++
+    }
 }
 function coll(el1, el2) {
     var rect1 = el1.getBoundingClientRect();
@@ -69,15 +98,13 @@ function f(e) {
             xv = -speed;
             yv = 0;
             break;
-        case "ArrowUp":
-            yv = -speed;
-            xv = 0;
-            break;
-        case "ArrowDown":
-            yv = speed;
-            xv = 0;
-            break;
         case " ":
+            document.getElementById("tk").setAttribute("src", `../pic/${kar}cd.png`)
+            setTimeout( () => {
+                document.getElementById("tk").setAttribute("src", `../pic/${kar}c.png`)
+            }, 200)
+            fds = 1
+            setTimeout(fd, 900)
             xv = 0;
             yv = 0;
             st = document.createElement('style');
