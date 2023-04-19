@@ -1,0 +1,105 @@
+﻿1.szint:
+•Scientists: Ada Byron
+k: Miről ismert Ada Byron?
+	a) a lyukkártya feltatálója
+	b) híres blues énekes New Orleans-ban
+		c)leírást készített a Charles Babbage által tervezett első mechanikai számítógéphez
+	d) semmiről, mert nem ismerem 
+•Star Wars: Obi-Wan Kenobi
+k: Melyik Sithet ölte meg Obi-Wan Kenobi?
+	a) Count Dooku
+	b) Darth Vader
+	c) Emperor Palpatine
+		d) Darth Maul 
+•Harry Potter: Draco Malfoy
+k: Melyik filmben derül ki, hogy Draco Malfoy halálfaló?
+	a) Harry Potter és a Főnix Rendje 
+		b) Harry Potter és a Félvér Herceg
+	c) Harry Potter és a Halál ereklyéi 1. rész
+	d) Harry Potter és a Halál ereklyéi 2. rész
+•The Lord of Rings: Borbak Trufiadok
+k: Kiket hozott a gyűrű szövetségébe a Trufa és Pippin?
+	a) törpök
+		b) entek
+	c) urukok
+	d) rohírok
+2.szint:
+•Scientists: Marie Curie
+k: Minek volt az úttörő kutatója Marie Curie?
+		a) a radioaktivitás
+	b) az elektromosság
+	c) a csillagászat
+	d) a kanyaró elleni oltás
+•Star Wars: Yoda
+k: Hogy hívják Baby Yodát?
+	a) George
+	b) Krait
+		c) Grogu
+	d) Rancor
+•Harry Potter: Dobby
+k: Melyik család házimanója Dobby?
+	a) Potter
+	b) Weasley 
+		c) Malfoy
+	d) Black
+•The Lord of Rings: Csavardi Samu
+k: Kivel utazott együtt lrgtöbbet Csavardi Samu?
+	a) Gandalf
+	b) Gimli
+		c) Zsákos Frodó
+	d) Legolas
+3.szint:
+•Scientists: Albert Einstein
+k: Mi Albert Einstein leghíresebb egyenlete?
+	a) W=U*Q
+	b) P=U*I
+	c) Fe=m*a
+		d) E=m*c2(négyzet)
+•Star Wars: Sith nagyúr
+k: Kiből lett a Sith nagyúr?
+	a) Lando Calrissian
+	b) Kylo Ren
+	c) Boba Fett 
+		d) Senator Palpatine
+•Harry Potter: Perselus Piton
+k: Milyen tantárgyakat tanított Perselus Piton?
+		a) bájitaltan, sötét varázslatok kivédése
+	b) bűbájtan, bájitaltan
+	c) átváltozástan, bájitaltan 
+	d) asztronómia, mágiaörténet
+•The Lord of Rings: Gollam 
+k: Mi volt Gollam drágasága?
+	a) a felesége
+	b) gyémánt nyaklánc
+		c) arany gyűrű
+	d) családi birtok
+4.szint:
+•Scientists: Erdős Pál
+k: Mi volt Erdős Pál foglalkozása?
+	a) fizikus
+	b) programozó 
+	c) kémikus
+		d) matematikus
+•Star Wars: Anakin Skywalker
+k: Ki lett Anakin Skywalkerből?
+	a) Darth Maul
+		b) Darth Vader
+	c) Darth Revan
+	d) Jedi Master Skywalker
+•Harry Potter: Voldemort
+k: Melyik nem volt horcrux?
+	a) Hugrabug Helga kelyhe
+	b) Hollóháti Hedvig diadémja
+	c) Mardekár medálja 
+		d) Griffendél kardja
+•The Lord of Rings: Sauron
+k: Ki tartozott Sauron szolgái közé?
+	a) Fehér Gandalf
+		b) Szarumán
+	c) Szürke Gandalf
+	d) Boromir
+5.szint: 
+•	Scientists: Steven Hawking
+•	Star Wars: Padmé Amidala
+•	Harry Potter: Harry Potter
+•	The Lord of Rings: Zsákos Frodó

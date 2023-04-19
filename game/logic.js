@@ -53,17 +53,26 @@ function start(x) {
                 fds = 0
                 if (sz < 5) {
                     document.getElementById("szer").style.display = "none"
-                    setTimeout(() => {
-                        sz++ ;
-                        document.getElementById("szer").style.display = "inline-block"
-                        document.getElementById("szer").setAttribute("src", `./${mappak[x]}/c${sz}.png`)
-                    }, 1000)
+                    setTimeout(quiz, 2000)
                 } else {
                     alert("Az utolsó szereplő is meghalt, You WIN!")
                 }
             }
         });
     }, 10);
+}
+function quiz() {
+    document.getElementById("quiz").innerHTML=`
+        <button onclick="endquiz()">Quiz vége</button>
+    `
+}
+function endquiz() {
+    document.getElementById("quiz").innerHTML=``
+    setTimeout(() => {
+        sz++ ;
+        document.getElementById("szer").style.display = "inline-block"
+        document.getElementById("szer").setAttribute("src", `./${mappak[x]}/c${sz}.png`)
+    }, 1000)
 }
 function fd() {
     if (fds) {
