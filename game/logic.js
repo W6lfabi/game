@@ -100,7 +100,7 @@ function endquiz() {
     setTimeout(() => {
         sz++ ;
         document.getElementById("szer").style.display = "inline-block"
-        document.getElementById("szer").setAttribute("src", `./${mappak[x]}/c${sz}.png`)
+        document.getElementById("szer").setAttribute("src", `./${mappak[xx]}/c${sz}.png`)
     }, 1000)
 }
 function fd() {
