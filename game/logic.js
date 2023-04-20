@@ -1,10 +1,39 @@
 nevek = ["Scientists","Star Wars","Harry Potter","The Lord of the Rings"];
 mappak = ["scientists","starwars","Potter","rings"];
 idlist = [
-    ["S1","S2","s3","s4","s5"].sort((a,b) => Math.random() - 0.5),
-    ["sw1","sw2"].sort((a,b) => Math.random() - 0.5),
-    ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
-    ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5)
+    [
+        [
+            "A mi családunk a költészet és a matematika váltakozó rétege.",
+            "Isten nem adott nekünk az elképzeléseink és érzéseink nagyon korlátozott kifejezési képességénél többet.",
+            'A "gép" bármely határozatlan funkció anyagi kifejeződése, bármilyen fokú általánosságban és összetettségben.'
+        ].sort((a,b) => Math.random() - 0.5),
+        ["S21","S22","s23","s24","s25"].sort((a,b) => Math.random() - 0.5),
+        ["S31","S32","s33","s34","s35"].sort((a,b) => Math.random() - 0.5),
+        ["S41","S42","s43","s44","s45"].sort((a,b) => Math.random() - 0.5),
+        ["S51","S52","s53","s54","s55"].sort((a,b) => Math.random() - 0.5)
+    ],
+    [
+        ["sw11","sw12"].sort((a,b) => Math.random() - 0.5),
+        ["sw21","sw22"].sort((a,b) => Math.random() - 0.5),
+        ["sw31","sw32"].sort((a,b) => Math.random() - 0.5),
+        ["sw41","sw42"].sort((a,b) => Math.random() - 0.5),
+        ["sw51","sw52"].sort((a,b) => Math.random() - 0.5)
+    ],
+    [
+        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
+        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
+        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
+        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
+        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5)
+    ],
+    [
+        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
+        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
+        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
+        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
+        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5)
+    ]
+    
 ]
 window.addEventListener("load", e => {
     s = "<div class='c'>" + Array(4)
@@ -21,7 +50,7 @@ xv = 0;
 yv = 0;
 ci = 0;
 speed = 20;
-sz = 1;
+sz = 0;
 xx = 0
 hi = 0
 function start(x) {
@@ -79,12 +108,19 @@ function fd() {
         fds = 0
         document.getElementById("szer").style="display: none;"
         document.getElementById("idezet").style.display="inline-block"
-        document.getElementById("idezet").innerHTML=`${idlist[xx][hi]}`
-        setTimeout(()=>{
-            document.getElementById("idezet").style.display="none";
-            document.getElementById("szer").style="display: inline-block;";
-        },1000)
-        hi++
+        document.getElementById("idezet").innerHTML=`${idlist[xx][sz][hi]}`
+        if (hi<2) {
+            setTimeout(()=>{
+                document.getElementById("idezet").style.display="none";
+                document.getElementById("szer").style="display: inline-block;";
+            },1000)
+            hi++
+        }
+        else {
+            setTimeout(()=>{
+                document.getElementById("idezet").innerHTML='Game OVER'
+            },1000)
+        } 
     }
 }
 function coll(el1, el2) {
