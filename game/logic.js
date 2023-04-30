@@ -5,33 +5,90 @@ idlist = [
         [
             "A mi családunk a költészet és a matematika váltakozó rétege.",
             "Isten nem adott nekünk az elképzeléseink és érzéseink nagyon korlátozott kifejezési képességénél többet.",
-            'A "gép" bármely határozatlan funkció anyagi kifejeződése, bármilyen fokú általánosságban és összetettségben.'
+            'A motor bármely határozatlan funkció anyagi kifejeződése, bármilyen fokú általánosságban és összetettségben.'
         ].sort((a,b) => Math.random() - 0.5),
-        ["S21","S22","s23","s24","s25"].sort((a,b) => Math.random() - 0.5),
-        ["S31","S32","s33","s34","s35"].sort((a,b) => Math.random() - 0.5),
-        ["S41","S42","s43","s44","s45"].sort((a,b) => Math.random() - 0.5),
-        ["S51","S52","s53","s54","s55"].sort((a,b) => Math.random() - 0.5)
+        ["Nekem azt tanították, hogy a haladás útja se nem gyors, se nem könnyű.",
+        "Az életben semmi félelmetes nincsen. Csak meg kell próbálnunk megérteni. Ha többet értenénk belőle, máris nem lenne annyi félnivalónk.",
+        "Hinnünk kell, hogy tehetségesek vagyunk valamiben, és azt a valamit bérmi áron is el kell érnünk.",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Csak a hülyék tudnak mindent, a többiek életük végéig tanulnak! ",
+        "Aki még sosem követett el hibát, valószínűleg még sosem próbált semmi új dolgot.",
+        "Ne sikeres ember próbálj lenni, hanem értékes",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["A sírban majd eleget pihenünk",
+        "Rossz az öregség, ha butasággal párosul.",
+        'XIV. Lajos azt monda: "Az állam én vagyok."; Trockij azt mondhatta volna: "A társadalom én vagyok."; én azt mondom: "A valóság én vagyok."',
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Az élet tragikus lenne, ha nem lenne vicces.",
+        "Az intelligencia a változáshoz való alkalmazkodóképesség.",
+        "Minden értelmes ember önfejűnek tűnik időnként.",
+        ].sort((a,b) => Math.random() - 0.5)
     ],
     [
-        ["sw11","sw12"].sort((a,b) => Math.random() - 0.5),
-        ["sw21","sw22"].sort((a,b) => Math.random() - 0.5),
-        ["sw31","sw32"].sort((a,b) => Math.random() - 0.5),
-        ["sw41","sw42"].sort((a,b) => Math.random() - 0.5),
-        ["sw51","sw52"].sort((a,b) => Math.random() - 0.5)
+        ["A harc senkit sem tesz naggyá.",
+        "A szerencsejáték a vesztesek sportja.",
+        "Az erő veled lesz. Mindig.",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Tedd, vagy ne tedd, de sose próbáld!",
+        "A félelem a sötét oldal kapuja.",
+        "Az erő hatalmas."
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Hitvány tudásod nem vetekedhet a sötét oldal hatalmával!",
+        "Ne tétovázz, és ne kegyelmezz!",
+        "Felejtsd el a múltat. Töröld el, hogy ha muszáj. Csak így válhatsz azzá, akivé válnod kell",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Igyekezz megválni önként mindentől, amit fájna elveszítened.",
+        "Ne feledd! Amire figyelsz, az a világod.",
+        "Rá fogsz jönni, hogy sok igazság, amihez ragaszkodunk, javarészt a mi szemszögünkön múlik.",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Így száll hát sírba a szabadság: tapsvihar közepette.",
+        "Minden meghal egyszer, még a csillagok is kihunynak.",
+        "Meghalni a népért igen nagy áldozat. De élni a népért annál is nagyobb áldozat."
+        ].sort((a,b) => Math.random() - 0.5)
     ],
     [
-        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
-        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
-        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
-        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5),
-        ["hp1","hp2"].sort((a,b) => Math.random() - 0.5)
+        ["A nagyság irigységet vet, az irigység gyűlöletet teremt, a gyűlölet hazugságot szül.",
+        "Van amikor muszáj a nagyobb jóra figyelni!",
+        "Sötétség nélkül nem létezik a fény sem.",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["„Ne szánd a halottakat! Az élőket sajnáld, s legfőképpen azokat, akik szeretet nélkül élnek.”",
+        "Dobby mostmár szabad manó.",
+        "Mindenkiben van fény és némi sötétség is. A kérdés az, hogy melyik részre hallgatunk."
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Ennyi idő után is? -Örökké",
+        "Mered használni a saját varázslataimat ellenem, Potter?",
+        "lehet, hogy elkerülte a figyelmedet, de az élet nem igazságos",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Ostobaság volt azt hinnem, hogy ez a kölyök valaha is erősebb volt, mint én.",
+        "Nem tudott elpusztítani az átok, ami bárki mást a halálba küldött volna.",
+        "Titokzatos dolog az idő. Hatalma van. És ha játszunk vele, veszélyes!",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["A döntéseinkben, nem pedig a képességeinkben mutatkozik meg, hogy kik is vagyunk valójában.",
+        "Csak azért, mert te egy teáskanál érzelmi színvonalán állsz, nem kell másokról is ezt feltételezned.",
+        "Van amikor muszáj a nagyobb jóra figyelni!",
+    ].sort((a,b) => Math.random() - 0.5)
     ],
     [
-        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
-        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
-        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
-        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5),
-        ["lor1","lotr2","lotr3"].sort((a,b) => Math.random() - 0.5)
+        ["Sok mindent elfelejtettem, amiről azt hittem, hogy tudom, és sok mindent megtanultam, amit már elfelejtettem.",
+        "Nem akarok harcolni. De ölbe tett kézzel várni az elkerülhetetlent még rosszabb.",
+        "Na jó, de mi lesz a 2. reggelivel?",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Szívünknek mégis a béke, a nyugalom, és a jól művelt föld a legkedvesebb.",
+        "Akad még jó ebben a világban, amiért érdemes küzdeni.",
+        "Ha én egyszer alszom, akkor alszom, akár legurulok, akár nem"
+        ].sort((a,b) => Math.random() - 0.5),
+        ["menj el és ne gyere többet vissza",
+        "A drágaság a miénk kell, hogy legyen",
+        "A komisz kis hobbitkák ellopták tőlünk",
+        ].sort((a,b) => Math.random() - 0.5),
+        ["nem bújhatsz el. látlak!",
+        "Nincs élet utánam, csak halál",
+        "Az éj átfest sok gondolatot."
+        ].sort((a,b) => Math.random() - 0.5),
+        ["Ne menj oda tanácsért, mert nemet és igent is fognak mondani.",
+        "Felesleges a bosszú; nem fog meggyógyítani semmit.",
+        "Sokan élnek, akik halált érdemelnek, és néhányan meghalnak, akik élhetnének."
+        ].sort((a,b) => Math.random() - 0.5)
     ]
     
 ]
