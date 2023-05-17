@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>csopi.progi</title>
+    <title>Be clever or shoot better</title>
+    <link rel="icon" type="image/x-icon" href="pic/favicon.ico">
     <script src="logic.js"></script>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <button onclick="
-        document.getElementById('b1').style.display='block'
+    
+<body onload="">
+    <div class="fade-in">
+        <img id="logomain" src="pic/logo.png">
+    </div>
+    <button id="ns" onclick="
         this.style.display='none'
-    ">start</button>
+        document.getElementById('b2').style.display='block'
+        document.getElementById('sugobtn').style.display='inline-block'
+    ">Start</button>
     <div id="b1"></div>
+    <div class="sugo" id="b2">
+        <h1>Súgó</h1>
+            <h2>A játék:</h2>
+                <p>A játék elején játékost és pályát kell választanod.</p>
+                <p>A játékot 3 lövéssel kezded, ha nem találod el az ellenefeled egy idézet jelenik meg.</p>
+                <p>Miután legyőzted az ellenséget kvíz segítségével nyerhetsz extra lövést.</p>
+            <h2>Irányítás:</h2>
+                <p>mozgás balra: bal gomb</p>
+                <p>mozgás jobbra: jobb gomb</p>
+                <p>lövés: szóköz</p>   
+    </div>
+    <button id="sugobtn" onclick="
+        document.getElementById('b2').style.display='none'
+        this.style.display='none'
+        document.getElementById('b1').style.display='block'
+    ">Tovább</button>
 </body>
 </html>

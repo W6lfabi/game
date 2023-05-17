@@ -1,23 +1,25 @@
-img {
-    width: 100px;
-    height: 100px;
+/* Abi */
+img.def { /* a logic js által beszúrt játékosok arcképét tartalmazó fényképek stílusa */
+    width: 150px;
+    height: 150px;
     background: fixed ;
     border: solid 6px pink;
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
-
 }
-img:hover {
+img.def:hover {
     border: solid 6px purple;
 }
-div.c {
+
+div.c { /* a játékosok fényképeit tartalmazó konténer (logic.js) */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
-div.c div {
+div.c div { /* a játékosok fényképet tartalmazó div-ek / képkeretek (logic.js)*/
     display: inline-block;
     background-color: aquamarine;
     margin: 6px;
@@ -25,16 +27,45 @@ div.c div {
     border-radius: 8px;
     box-shadow: 1px 1px 3px inset black;
 }
-div#b1 {
+div#b1 { /* a játékosok fényképeit tartalmazó konténer-t tartalmazó div (index.html), csak a tovább gomb (#sugobtn) megnyomása után jelenik meg */
     text-align: center;
     display: none;
-}
-body{
+} 
+body { 
     text-align: center;
     text-size-adjust: 100px;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
 }
-button{
+button#ns{
     margin-top: 200px;
     text-shadow: 2px;
+}
+.sugo {
+  color: rgb(75, 11, 11);
+  text-shadow: 1px 1px 3px rgb(59, 21, 21);
+}
+.sugo p {
+  font-size: 13px;
+}
+
+/* Lili */
+div#b2 { /* a súgó szövegét tartalmazó div */
+  text-align: center;
+  display: none;
+}
+button#sugobtn {
+  text-align: center;
+  display: none;
+}
+.fade-in { /* a Be clever ... fade-in animációja */
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn { /* És keyframe-jei (Csak újabb böngészők, bocsi) */
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

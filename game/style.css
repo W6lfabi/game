@@ -1,6 +1,6 @@
 img.x {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background: fixed;
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
@@ -11,10 +11,23 @@ img.tank {
     height: 150px;
 }
 div.c {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.left {
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+}
+
+div#bsx {
+    margin: auto;
 }
 
 div.c div {
@@ -25,7 +38,7 @@ div.c div {
     border-radius: 8px;
     box-shadow: 1px 1px 3px inset black;
     cursor: pointer;
-    font-size: 11px;
+    font-size: 22px;
 }
 
 img.x:hover {
@@ -36,6 +49,8 @@ body {
     user-select: none;
     background-color: rgb(205, 185, 185);
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
 }
 
 button {
@@ -44,20 +59,23 @@ button {
 
 .golyo {
     position: absolute;
+    display: inline-block;
     animation: g1 1s 1;
-    box-shadow: 1px 1px 3px black;
+/*    box-shadow: 1px 1px 3px black;
     background-color: rgb(255, 0, 0);
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 10px;*/
     top: -30px;
     animation-timing-function: linear;
+
+    z-index: 10; 
 }
 
 #tank {
     transition: 0.2s;
     transition-timing-function: linear;
-
+    z-index: 100; 
 }
 
 #o1 {
@@ -68,8 +86,22 @@ button {
     left: 50%;
     top: 2%;
     animation: a1 7s infinite;
+    z-index: 90; 
 }
 
+#status {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 30%;
+    width: 110px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    border: solid 2px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    text-align: left;
+}
 .ka {
     width: 110px;
     height: 210px;
@@ -77,17 +109,15 @@ button {
     height: 210px;
     cursor: pointer;
 }
-@keyframes a1 {
+@keyframes a1 { /* karakter (ellenség) mozgás-animációja (jobbra-balra) */
     0% {
         left: 2%;
         top: 2%;
     }
-
     50% {
         left: 90%;
         top: 2%;
     }
-
     100% {
         left: 2%;
         top: 2%;
